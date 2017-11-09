@@ -83,45 +83,45 @@ function vmsDisplay (
     
     this.display = Raphael( id, width, height);
     
-    this.display.rect(2, 2, width -10, height-10, 5).attr({
-            "stroke-width": 6,
-            "stroke": "#737373",
-            "fill": "#000000"
-            });   
-            
-    this.display.rect(2, 2, width -10, height-10, 5).attr({
-            "stroke-width": 6,
-            "stroke": "#737373"
-            });    
-    
-    this.display.rect(1, 3, width -10, height -10, 5).attr({
-            "stroke-width": 1,
-            "stroke": "#e6e6e6"
-            });    
+//    this.display.rect(2, 2, width -10, height-10, 5).attr({
+//            "stroke-width": 6,
+//            "stroke": "#737373",
+//            "fill": "#000000"
+//            });   
+//            
+//    this.display.rect(2, 2, width -10, height-10, 5).attr({
+//            "stroke-width": 6,
+//            "stroke": "#737373"
+//            });    
+//    
+//    this.display.rect(1, 3, width -10, height -10, 5).attr({
+//            "stroke-width": 1,
+//            "stroke": "#e6e6e6"
+//            });    
     
     //Title Display
-    this.display.text(width/2 + 5, height * .10 + 5, name).attr({
+    this.display.text(width/2 + 5, 16.025, name).attr({
         "stroke-width": 1,
-        "fill": "white",
-        "stroke": "#ffffff",
+        "fill": "red",
+        "stroke": "red",
         "font-size": Math.min(height/8, width/8)
     });
     
-    //Value Display
-    this.valueDisplay = this.display.text(width/2 + 5, height/2, "0").attr({
-        "stroke-width": 1,
-        "fill": "white",
-        "stroke": "#ffffff",
-        "font-size": Math.min(height/3, width/3)
-    });
-       
-    //Units Display
-    this.display.text(width/2 + 5, height * .80, units).attr({
-        "stroke-width": 1,
-        "fill": "white",
-        "stroke": "#ffffff",
-        "font-size": Math.min(height/8, width/8)
-    });
+//    //Value Display
+//    this.valueDisplay = this.display.text(width/2 + 5, height/2, "0").attr({
+//        "stroke-width": 1,
+//        "fill": "white",
+//        "stroke": "#ffffff",
+//        "font-size": Math.min(height/3, width/3)
+//    });
+//       
+//    //Units Display
+//    this.display.text(width/2 + 5, height * .80, units).attr({
+//        "stroke-width": 1,
+//        "fill": "white",
+//        "stroke": "#ffffff",
+//        "font-size": Math.min(height/8, width/8)
+//    });
     
     
 //    $(this.frame).on('taphold', calibrateX);

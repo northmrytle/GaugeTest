@@ -13,6 +13,7 @@ var gauge1, gauge2;
 var viewHeight = document.documentElement.clientHeight;
 var viewWidth = document.documentElement.clientWidth;
 var random1 = 0;
+var random2 = 0;
 
 var ajaxTimeout = 950;
 var baseURL = 'http://10.10.10.1:5002/vms/api/v1.0';
@@ -96,7 +97,8 @@ function updateValue(){
 //    console.log('updateValue');
     random1 = Math.floor((Math.random() * 30) + 1);
     gauge1.setValue(random1);
-    
+    random2 = Math.floor((Math.random() * 30) + 1);
+    gauge2.setValue(random2);
 };
 
 function updateValueAjax(){
