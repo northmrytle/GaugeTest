@@ -26,7 +26,7 @@ xmlhttp.onreadystatechange = function() {
     }
 };    
 
-gauge1 = new nmaGauge(
+gauge1 = new vmsGauge(
                 'page1', 
                 'ff1a', 
                 'GPH Port', 
