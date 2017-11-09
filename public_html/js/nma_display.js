@@ -125,7 +125,7 @@ function nmaDisplay (
     title.setAttribute("stroke-width", 1);
     title.setAttribute("fill", "white");
     title.setAttribute("stroke", "white");
-    title.setAttribute("font-size", Math.min(height/8, width/8) );
+    title.setAttribute("font-size", Math.round(Math.min(height/8, width/8)) + "px" );
     title.setAttribute("text-anchor", "middle");
     title.setAttribute("alignment-baseline", "central");
     title.innerHTML = "<tspan>" + name + "</tspan>";
@@ -138,7 +138,7 @@ function nmaDisplay (
     this.valueDisplay.setAttribute("stroke-width", 1);
     this.valueDisplay.setAttribute("fill", "white");
     this.valueDisplay.setAttribute("stroke", "white");
-    this.valueDisplay.setAttribute("font-size", Math.min(height/3, width/3) );
+    this.valueDisplay.setAttribute("font-size", Math.round(Math.min(height/3, width/3)) + "px" );
     this.valueDisplay.setAttribute("text-anchor", "middle");
     this.valueDisplay.setAttribute("alignment-baseline", "central");
     this.valueDisplay.innerHTML = "0";
@@ -151,7 +151,7 @@ function nmaDisplay (
     element.setAttribute("stroke-width", 1);
     element.setAttribute("fill", "white");
     element.setAttribute("stroke", "white");
-    element.setAttribute("font-size", Math.min(height/8, width/8) );
+    element.setAttribute("font-size", Math.round(Math.min(height/8, width/8)) + "px" );
     element.setAttribute("text-anchor", "middle");
     element.setAttribute("alignment-baseline", "central");
     element.innerHTML = "<tspan>" + units + "</tspan>";
