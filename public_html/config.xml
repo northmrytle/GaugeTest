@@ -3,10 +3,10 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "net.northmyrtle.gaugetest"
         version   = "1.0.0">
-    <name>NMM VMS</name>
+    <name>Gauge Test</name>
 
     <description>
-        Vessel Monitoring System
+        Gauge Test
     </description>
 
     <author href="http://www.northmyrtle.net" email="support@northmyrtle.net">
