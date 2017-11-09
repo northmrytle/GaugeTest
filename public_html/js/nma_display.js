@@ -128,8 +128,13 @@ function nmaDisplay (
     title.setAttribute("font-size", Math.round(Math.min(height/8, width/8)) + "px" );
     title.setAttribute("text-anchor", "middle");
     title.setAttribute("alignment-baseline", "central");
+    title.setAttribute("style", "-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 13px;");
     title.innerHTML = "<tspan>" + name + "</tspan>";
     this.display.appendChild(title);
+    
+    //<text x="140.25" y="15.950000000000001" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="13px" 
+    //stroke="#ffffff" fill="#ffffff" 
+    //style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 13px;" stroke-width="1"><tspan dy="4.512500000000001" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Fuel Flow</tspan></text>
 
     //Value Display
     this.valueDisplay = document.createElementNS("http://www.w3.org/2000/svg", "text");
@@ -141,6 +146,7 @@ function nmaDisplay (
     this.valueDisplay.setAttribute("font-size", Math.round(Math.min(height/3, width/3)) + "px" );
     this.valueDisplay.setAttribute("text-anchor", "middle");
     this.valueDisplay.setAttribute("alignment-baseline", "central");
+    this.valueDisplay.setAttribute("style", "-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 13px;");
     this.valueDisplay.innerHTML = "0";
     this.display.appendChild(this.valueDisplay);
 
@@ -154,6 +160,7 @@ function nmaDisplay (
     element.setAttribute("font-size", Math.round(Math.min(height/8, width/8)) + "px" );
     element.setAttribute("text-anchor", "middle");
     element.setAttribute("alignment-baseline", "central");
+    element.setAttribute("style", "-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 13px;");
     element.innerHTML = "<tspan>" + units + "</tspan>";
     this.display.appendChild(element);
     
