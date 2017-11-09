@@ -123,8 +123,9 @@ function nmaDisplay (
     title.setAttribute("x", width/2);
     title.setAttribute("y", height * .10 + 5);
     title.setAttribute("stroke-width", 1);
-    title.setAttribute("fill", "white");
-    title.setAttribute("stroke", "white");
+    title.setAttribute("fill", "#ffffff");
+    title.setAttribute("stroke", "#ffffff");
+    title.setAttribute("font-family", "Arial");
     title.setAttribute("font-size", Math.round(Math.min(height/8, width/8)) + "px" );
     title.setAttribute("text-anchor", "middle");
     title.setAttribute("alignment-baseline", "central");
@@ -141,8 +142,9 @@ function nmaDisplay (
     this.valueDisplay.setAttribute("x", width/2 );
     this.valueDisplay.setAttribute("y", height/2);
     this.valueDisplay.setAttribute("stroke-width", 1);
-    this.valueDisplay.setAttribute("fill", "white");
-    this.valueDisplay.setAttribute("stroke", "white");
+    this.valueDisplay.setAttribute("fill", "#ffffff");
+    this.valueDisplay.setAttribute("stroke", "#ffffff");
+    this.valueDisplay.setAttribute("font-family", "Arial");
     this.valueDisplay.setAttribute("font-size", Math.round(Math.min(height/3, width/3)) + "px" );
     this.valueDisplay.setAttribute("text-anchor", "middle");
     this.valueDisplay.setAttribute("alignment-baseline", "central");
@@ -155,8 +157,9 @@ function nmaDisplay (
     element.setAttribute("x", width/2  );
     element.setAttribute("y", height * .80);
     element.setAttribute("stroke-width", 1);
-    element.setAttribute("fill", "white");
-    element.setAttribute("stroke", "white");
+    element.setAttribute("fill", "#ffffff");
+    element.setAttribute("stroke", "#ffffff");
+    element.setAttribute("font-family", "Arial");
     element.setAttribute("font-size", Math.round(Math.min(height/8, width/8)) + "px" );
     element.setAttribute("text-anchor", "middle");
     element.setAttribute("alignment-baseline", "central");
