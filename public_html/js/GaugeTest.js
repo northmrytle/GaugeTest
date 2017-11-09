@@ -6,7 +6,9 @@
 
 'use strict';
 
-var gauge1;
+var display1, display2;
+var gauge1, gauge2;
+
 
 var viewHeight = document.documentElement.clientHeight;
 var viewWidth = document.documentElement.clientWidth;
@@ -26,6 +28,35 @@ xmlhttp.onreadystatechange = function() {
     }
 };    
 
+try {
+display1 = new vmsDisplay(
+                'page1', 
+                'ff1', 
+                'Fuel Flow', 
+                0,
+                '0.4755096',
+                'GPH',
+                0,
+                0,          
+                viewHeight*.15,     
+                viewWidth*.50-5,    
+                5,                  
+                5                   ); //.0005 * .264172 * 3600
+    
+display2 = new nmaDisplay(
+                'page1', 
+                'ff2', 
+                'Fuel Flow', 
+                0,
+                '0.4755096',
+                'GPH',
+                0,
+                0,          
+                viewHeight*.15,     
+                viewWidth*.50-5,    
+                5,                  
+                viewWidth*.50                   ); //.0005 * .264172 * 3600
+                
 gauge1 = new vmsGauge(
                 'page1', 
                 'ff1a', 
@@ -36,8 +67,27 @@ gauge1 = new vmsGauge(
                 30,
                 viewWidth*.45,
                 viewWidth *.45,
-                80,
+                150,
                 10);
+
+
+gauge2 = new nmaGauge(
+                'page1', 
+                'ff2a', 
+                'GPH Port', 
+                0,
+                0.4755096,
+                0,
+                30,
+                viewWidth*.45,
+                viewWidth *.45,
+                150,
+                viewWidth *.50);
+
+}catch (err){
+    console.log('error ' + err);
+}
+
 
 setInterval(updateValue, 1000);
 console.log('startup complete');
