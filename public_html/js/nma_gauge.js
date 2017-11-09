@@ -291,7 +291,8 @@ function nmaGauge(
         animation.setAttribute("type", "rotate");
         animation.setAttribute("from", "360 " + width/2 + " " + height/2); 
         animation.setAttribute("to", 360-135 + " " + width/2 + " " + height/2);
-        animation.setAttribute("dur", "500ms"); 
+        animation.setAttribute("dur", "500ms");
+        animation.setAttribute("calcMode", "paced");
 //        animation.setAttribute("additive", "sum"); 
         animation.setAttribute("repeatCount", "0");
         animation.setAttribute("fill", "freeze");
