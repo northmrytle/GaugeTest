@@ -127,6 +127,6 @@ function updateValueXMLHTTP(){
     console.log('updateValueXMLHTTP');
     xmlhttp.open("GET", baseURL + '/flow', true);
     xmlhttp.send();
-    
+    document.getElementById('message2').innerHTML = document.getElementById('message2').innerHTML + ' updateValueXMLHTTP';
 };
 
