@@ -105,6 +105,7 @@ function updateValueAjax(){
     console.log('updateValuesLive');
     $.ajax({
         url: baseURL + '/flow', 
+        type: 'GET',
         timeout: ajaxTimeout,
         dataType: 'json',
         success: function(data){
