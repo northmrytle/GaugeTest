@@ -23,6 +23,7 @@ var flow;
 var xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function() {
+    document.getElementById('message').innerHTML = "onreadystatechanged";
     if (this.readyState === 4 && this.status === 200) {
         flow = JSON.parse(this.responseText);
         gauge1.setValue(flow.sensor1.counts.count0);
