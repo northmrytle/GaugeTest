@@ -15,12 +15,10 @@
     
     <!-- device required so we can detect if we are using iOS -->
     
-    <!--
     <plugin name="cordova-plugin-device"        source="npm"/>
     <plugin name="cordova-plugin-splashscreen"  source="npm"/>
     <plugin name="cordova-plugin-geolocation"   source="npm"/>
     <plugin name="cordova-plugin-insomnia" />
-    -->
     
     <plugin name="cordova-plugin-device" spec="1.1.6" />
     <plugin name="cordova-plugin-geolocation" spec="2.4.3" />
