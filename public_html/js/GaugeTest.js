@@ -23,7 +23,7 @@ var flow;
 var xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function() {
-    document.getElementById('message').innerHTML = ' this.responseText ' + this.responseText;
+    document.getElementById('message').innerHTML = ' this.readyState ' + this.readyState;
     if (this.readyState === 4 && this.status === 200) {
         flow = JSON.parse(this.responseText);
         gauge1.setValue(flow.sensor1.counts.count0);
@@ -125,7 +125,11 @@ function updateValueAjax(){
 
 function updateValueXMLHTTP(){
     console.log('updateValueXMLHTTP');
+    
+    
+//    xmlhttp.setRequestHeader('Content-Type', 'application/json');
     xmlhttp.open("GET", baseURL + '/flow', true);
+    
     xmlhttp.send();
     document.getElementById('message2').innerHTML = document.getElementById('message2').innerHTML + ' updateValueXMLHTTP';
 };
