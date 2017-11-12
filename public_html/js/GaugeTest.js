@@ -108,8 +108,9 @@ function updateValueAjax(){
         type: 'GET',
         timeout: ajaxTimeout,
         dataType: 'json',
+        contentType: 'application/json',
         success: function(data){
-            alert('data ' + data);
+//            alert('data ' + data);
             flow = data;
             gauge1.setValue(flow.sensor1.counts.count0);
             },
