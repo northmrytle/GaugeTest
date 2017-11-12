@@ -39,7 +39,7 @@ gauge1 = new vmsGauge(
                 80,
                 10);
 
-setInterval(updateValue, 1000);
+setInterval(updateValueAjax, 1000);
 console.log('startup complete');
 
 function updateValue(){
