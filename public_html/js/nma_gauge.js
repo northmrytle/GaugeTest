@@ -149,31 +149,31 @@ function nmaGauge(
         fontName = 'arial';
 
         //Tick Values   
-        for (i = 3; i <= 9; i++) {
-            a = Number(45 * Math.PI /180) * i;
-            r = width/3.15 - 6;
-
-            x = width/2 + r * Math.cos(a) - width/20;
-            y = height/2 + 3 + r * Math.sin(a) + height/75;
-
-            tickValue = ((maxValue - minValue)/6) * (i - 3);
-            tickValue = tickValue.toFixed(0);
-            fontSize = width/11;
-//            this.gauge.text(x,y, tickValue).attr({
-//                "stroke": "white",
-//                "fill": "white",
-//                "font-size": fontSize
-//                });
-    
-            element = document.createElementNS("http://www.w3.org/2000/svg", "text");
-            element.setAttribute("x", x);
-            element.setAttribute("y", y);
-            element.innerHTML = tickValue;
-            element.setAttribute("stroke", "white");
-            element.setAttribute("fill", "white");
-            element.setAttribute("font-size", fontSize);
-            this.gauge.append(element);
-            }; 
+//        for (i = 3; i <= 9; i++) {
+//            a = Number(45 * Math.PI /180) * i;
+//            r = width/3.15 - 6;
+//
+//            x = width/2 + r * Math.cos(a) - width/20;
+//            y = height/2 + 3 + r * Math.sin(a) + height/75;
+//
+//            tickValue = ((maxValue - minValue)/6) * (i - 3);
+//            tickValue = tickValue.toFixed(0);
+//            fontSize = width/11;
+////            this.gauge.text(x,y, tickValue).attr({
+////                "stroke": "white",
+////                "fill": "white",
+////                "font-size": fontSize
+////                });
+//    
+//            element = document.createElementNS("http://www.w3.org/2000/svg", "text");
+//            element.setAttribute("x", x);
+//            element.setAttribute("y", y);
+//            element.innerHTML = tickValue;
+//            element.setAttribute("stroke", "white");
+//            element.setAttribute("fill", "white");
+//            element.setAttribute("font-size", fontSize);
+//            this.gauge.append(element);
+//            }; 
 
 
         //Tick Marks Major    
@@ -236,14 +236,14 @@ function nmaGauge(
 //        this.title.attr("fill", "white");
 //        this.title.attr("font-size",fontSize - 5);
 
-        element = document.createElementNS("http://www.w3.org/2000/svg", "text");
-        element.setAttribute("x", width/2 - width/6);
-        element.setAttribute("y", height/2 + height/3);
-        element.innerHTML = name;
-        element.setAttribute("stroke", "white");
-        element.setAttribute("fill", "white");
-        element.setAttribute("font-size", fontSize - 5);
-        this.gauge.append(element);
+//        element = document.createElementNS("http://www.w3.org/2000/svg", "text");
+//        element.setAttribute("x", width/2 - width/6);
+//        element.setAttribute("y", height/2 + height/3);
+//        element.innerHTML = name;
+//        element.setAttribute("stroke", "white");
+//        element.setAttribute("fill", "white");
+//        element.setAttribute("font-size", fontSize - 5);
+//        this.gauge.append(element);
 
 
         x1 = width/2 - (width * .03);
